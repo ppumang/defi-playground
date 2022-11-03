@@ -1,0 +1,133 @@
+{
+  "contractName": "UniswapV2",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/UniswapV2.sol\":\"UniswapV2\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/UniswapV2.sol\":{\"keccak256\":\"0xd58edd8eb6cb262728bf5e5d977f91355284e5ce4070903ab68f20671da556e6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ed426b21540998bac8d3436a008401d5a4e3f78b567dffd2a56d6deead37483e\",\"dweb:/ipfs/QmUUqQ6aLJ8ea3BoWLd4QH1et7pxRbt4NEJph9MenWA54Z\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212203a67801eeb1df4fb4de12cc4729cf6335f7b80f189469bd0bfce6ed6b4e2006364736f6c63430008110033",
+  "deployedBytecode": "0x6080604052600080fdfea26469706673582212203a67801eeb1df4fb4de12cc4729cf6335f7b80f189469bd0bfce6ed6b4e2006364736f6c63430008110033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "83:27:6:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "83:27:6:-:0;;;;;",
+  "source": "// contracts/GLDToken.sol\n// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract UniswapV2 {\n    \n}",
+  "sourcePath": "/Users/minjae/workspace/blockchain/playground/contracts/UniswapV2.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/UniswapV2.sol",
+    "exportedSymbols": {
+      "UniswapV2": [
+        757
+      ]
+    },
+    "id": 758,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 756,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "58:23:6"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "UniswapV2",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 757,
+        "linearizedBaseContracts": [
+          757
+        ],
+        "name": "UniswapV2",
+        "nameLocation": "92:9:6",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 758,
+        "src": "83:27:6",
+        "usedErrors": []
+      }
+    ],
+    "src": "58:52:6"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/UniswapV2.sol",
+    "exportedSymbols": {
+      "UniswapV2": [
+        757
+      ]
+    },
+    "id": 758,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 756,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "58:23:6"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "UniswapV2",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 757,
+        "linearizedBaseContracts": [
+          757
+        ],
+        "name": "UniswapV2",
+        "nameLocation": "92:9:6",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 758,
+        "src": "83:27:6",
+        "usedErrors": []
+      }
+    ],
+    "src": "58:52:6"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.17+commit.8df45f5f.Emscripten.clang"
+  },
+  "networks": {
+    "1667310343760": {
+      "events": {},
+      "links": {},
+      "address": "0x62521c53ab9A5F4d3B716cF69697a17854eA36EC",
+      "transactionHash": "0xdabf250bd72ae0068d8b95055b95e922cc38a666f4154c290d7189e9ade7f9fa"
+    },
+    "1667353045128": {
+      "events": {},
+      "links": {},
+      "address": "0xBFad9766E5DAC114Bf8470862B45Ac6fA8CF57A2",
+      "transactionHash": "0x82768d38d54344fb3832a2a137f33d81469fcdf5bb20788c9be5bf80f5d71647"
+    }
+  },
+  "schemaVersion": "3.4.6",
+  "updatedAt": "2022-11-02T02:13:37.941Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
