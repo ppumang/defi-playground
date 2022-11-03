@@ -31,10 +31,10 @@ contract Pool {
 
 
     function provideLiquidity(uint256 token0_amt, uint256 token1_amt) public {
-        uint256 userToken0Balance = token0.balanceOf(msg.sender);
-        uint256 userToken1Balance = token1.balanceOf(msg.sender);
-        require(userToken0Balance >= token0_amt, "lack of token0 balance");
-        require(userToken1Balance >= token1_amt, "lack of token1 balance");
+        uint256 userToken0Allowance = token0.allowance(msg.sender, address(this));
+        uint256 userToken1Allowance = token1.allowance(msg.sender, address(this));
+        require(userToken0Allowance >= token0_amt, "lack of token0 balance");
+        require(userToken1Allowance >= token1_amt, "lack of token1 balance");
 
         token0.transferFrom(msg.sender, address(this), token0_amt);
         token1.transferFrom(msg.sender, address(this), token1_amt);
@@ -72,7 +72,9 @@ contract Pool {
         return ret;
     }
 
-    function getAllowance() public view returns(uint256) {
-        return token0.allowance(msg.sender, address(this));
+    function getAllowance() public view returns(uint256[2] memory ret) {
+        ret[0] = (token0.allowance(msg.sender, address(this)));
+        ret[1] = (token1.allowance(msg.sender, address(this)));
+        return ret;
     }
 }

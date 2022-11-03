@@ -30,11 +30,15 @@ contract("Token0", (accounts) => {
   });
 
   it("provide liquidity", async () => {
-    await token0.increaseAllowance(pool.address, 10);
-    await token1.increaseAllowance(pool.address, 10);
-    console.log(await pool.getAllowance());
+    await token0.increaseAllowance(pool.address, 10, { from: addr1 });
+    await token1.increaseAllowance(pool.address, 10, { from: addr1 });
+    let all = await pool.getAllowance();
+    console.log(all[0]);
+    console.log(all[1]);
     await pool.provideLiquidity(1, 1, { from: addr1 });
 
     console.log(await token0.balanceOf(pool.address));
   });
+
+  it("swap", async () => {});
 });
